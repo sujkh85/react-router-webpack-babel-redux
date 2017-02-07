@@ -1,5 +1,7 @@
-# react-webpack-babel
+# react-router-webpack-babel-redux
 Simple React Webpack Babel Starter Kit
+
+Imitated an [react-webpack-babel](https://github.com/alicoding/react-webpack-babel)
 
 Tired of complicated starters with 200MB of dependencies which are hard to understand and modify?
 

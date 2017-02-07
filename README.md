@@ -1,4 +1,4 @@
-Imitated an [react-webpack-babel](https://github.com/alicoding/react-webpack-babel)
+###Imitated an [react-webpack-babel](https://github.com/alicoding/react-webpack-babel)
 
 # react-router-webpack-babel-redux
 Simple React Webpack Babel Starter Kit(add react-router, redux)
@@ -9,7 +9,7 @@ Try this is a simple [React](https://facebook.github.io/react/), [Webpack](http:
 
 ### What's in it?
 
-* Simple src/index.jsx and src/index.css (local module css).
+* Simple src/index.jsx(modify src/component/home/home.js) and src/index.css (local module css).
 * Webpack configuration for development (with hot reloading) and production (with minification).
 * CSS module loading, so you can include your css by ```import styles from './path/to.css';```.
 * Both js(x) and css hot loaded during development.
@@ -21,19 +21,19 @@ Try this is a simple [React](https://facebook.github.io/react/), [Webpack](http:
 * Fork and clone the project:
 
 ```
-git clone https://github.com/alicoding/react-webpack-babel.git
+git clone https://github.com/sujkh85/react-router-webpack-babel-redux.git
 ```
 
 * Then install the dependencies:
 
 ```
-npm install
+npm i
 ```
 
 * Run development server:
 
 ```
-npm start
+npm run start
 ```
 
 * Or you can run development server with [webpack-dashboard](https://github.com/FormidableLabs/webpack-dashboard):

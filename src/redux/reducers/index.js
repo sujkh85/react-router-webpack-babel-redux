@@ -7,7 +7,9 @@ const appReducer = combineReducers({
     routing
 })
 
+
 const rootReducer = (state, action)=>{
+    //if you need clear store
     if(action.type === 'CLEAR_STORE'){
         state = undefined
     }

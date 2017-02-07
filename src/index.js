@@ -7,7 +7,6 @@ import routes from './routes';
 import configureStore from './redux/store/configureStore';
 
 import { AppContainer } from 'react-hot-loader';
-import App from './app.js';
 
 export const store = configureStore();
 const history = syncHistoryWithStore(hashHistory, store);
@@ -16,7 +15,7 @@ render(
     <Provider store={store}>
         <Router history={history} routes={routes} />
     </Provider>,
-    document.querySelector("#app")
+    document.querySelector("#root")
 );
 
 // if (module && module.hot) {

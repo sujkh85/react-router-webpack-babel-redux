@@ -1,5 +1,7 @@
 ###Imitated an [react-webpack-babel](https://github.com/alicoding/react-webpack-babel)
 
+### i needed an additional libraries (babel-preset-stage-0, react-router, redux, redux-thunk, react-redux, react-router-redux etc)
+
 # react-router-webpack-babel-redux
 Simple React Webpack Babel Starter Kit(add react-router, redux)
 

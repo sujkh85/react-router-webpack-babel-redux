@@ -1,0 +1,7 @@
+{
+    "source": "./src",
+    "destination": "./doc",
+    "access": ["public", "protected", "private"],
+    "autoPrivate": true,
+    "package": "./package.json"
+}

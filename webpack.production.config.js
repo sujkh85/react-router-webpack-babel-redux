@@ -16,9 +16,9 @@ module.exports = {
 		main:['./src/index.js','./styles/index.scss']
 	},
 	output: {
-		publicPath: '/',
+		publicPath: './',
 		path: path.join(__dirname, 'dist'),
-		filename: '[name].js'
+		filename: '[name].bundle.js'
 	},
 	resolve: {
 		extensions: ['', '.js', '.jsx']

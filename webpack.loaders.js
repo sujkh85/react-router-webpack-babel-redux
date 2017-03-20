@@ -44,7 +44,7 @@ module.exports = [
 		loader: 'json-loader'
 	},
 	{
-		test   : /\.scss$/,
+		test   : /\.scss$|.css$/,
 		loaders: ["style", "css", "sass"]
 	}
 ];

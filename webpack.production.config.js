@@ -4,6 +4,7 @@ var loaders = require('./webpack.loaders');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 loaders.push({
 	test: /\.scss$/,
@@ -13,7 +14,7 @@ loaders.push({
 
 module.exports = {
 	entry: {
-		main:['./src/index.js','./styles/index.scss']
+		main:['./src/index.js','./index.scss']
 	},
 	output: {
 		publicPath: './',
@@ -52,6 +53,9 @@ module.exports = {
 				css: ['style.css'],
 				js: [ "bundle.js"],
 			}
-		})
+		}),
+		new CopyWebpackPlugin([
+            { from: './resources',to:'./resources' }
+        ])
 	]
 };

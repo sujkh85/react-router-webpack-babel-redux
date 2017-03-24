@@ -7,7 +7,7 @@ export default class Home extends React.Component {
       <div>
         <h1 onClick={()=>{
                 this.props.push('/mimi')
-            }}>It Works</h1>
+            }}>click me</h1>
         <p>This React project just works including <span className="redBg">module</span> local styles.</p>
         <p>Enjoy!</p>
       </div>

@@ -19,7 +19,7 @@ module.exports = {
 	entry: [
 		'react-hot-loader/patch',
 		'./src/index.js', // your app's entry point
-		'./styles/index.scss'
+		'./index.scss'
 	],
 	devtool: process.env.WEBPACK_DEVTOOL || 'eval-source-map',
 	output: {
@@ -34,7 +34,7 @@ module.exports = {
 		loaders
 	},
 	devServer: {
-		contentBase: "./public",
+		contentBase: "./",
 		// do not print bundle build stats
 		noInfo: true,
 		// enable HMR

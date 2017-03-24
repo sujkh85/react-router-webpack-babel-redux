@@ -17,6 +17,7 @@
   "license": "MIT",
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
+    "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
     "jquery": "^1.12.4",
     "json-loader": "^0.5.4",

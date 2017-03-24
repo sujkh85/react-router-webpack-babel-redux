@@ -1,2 +1,16 @@
-@import './styles/main';
-@import './styles/common/button'
+//base
+@import './styles/base/reset';
+@import './styles/base/normalize';
+@import './styles/base/fonts';
+
+//components
+@import './styles/components/button';
+
+//layouts
+
+//pages
+
+//utils
+@import './styles/utils/variables';
+
+//vender

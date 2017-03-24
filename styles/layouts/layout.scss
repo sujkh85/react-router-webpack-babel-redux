@@ -1,0 +1,12 @@
+.wrap{
+    margin: 40px 0;
+}
+.containers{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+
+    &__inner{
+        padding: 0 30px;
+    }
+}

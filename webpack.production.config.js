@@ -5,6 +5,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var WebpackCleanupPlugin = require('webpack-cleanup-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
+var autoprefixer = require('autoprefixer');
+var rucksack = require('rucksack-css');
 
 loaders.push({
 	test: /\.scss$/,
@@ -26,6 +28,19 @@ module.exports = {
 	},
 	module: {
 		loaders
+	},
+	postcss: function() {
+		return [
+			autoprefixer({
+				browsers: [
+				'>1%',
+				'last 4 versions',
+				'Firefox ESR',
+				'not ie < 9', // React doesn't support IE8 anyway
+				]
+			}),
+			rucksack()
+		];
 	},
 	plugins: [
 		new WebpackCleanupPlugin(),

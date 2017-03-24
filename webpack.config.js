@@ -2,6 +2,8 @@
 var webpack = require('webpack');
 var path = require('path');
 var loaders = require('./webpack.loaders');
+var autoprefixer = require('autoprefixer');
+var rucksack = require('rucksack-css');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var DashboardPlugin = require('webpack-dashboard/plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
@@ -45,6 +47,19 @@ module.exports = {
 		historyApiFallback: true,
 		port: PORT,
 		host: HOST
+	},
+	postcss: function() {
+		return [
+			autoprefixer({
+				browsers: [
+				'>1%',
+				'last 4 versions',
+				'Firefox ESR',
+				'not ie < 9', // React doesn't support IE8 anyway
+				]
+			}),
+			rucksack()
+		];
 	},
 	plugins: [
 		new webpack.NoErrorsPlugin(),

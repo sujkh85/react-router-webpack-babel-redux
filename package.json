@@ -17,10 +17,12 @@
   "license": "MIT",
   "homepage": "https://github.com/alicoding/react-webpack-babel#readme",
   "dependencies": {
+    "autoprefixer": "^6.7.7",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.1",
     "jquery": "^1.12.4",
     "json-loader": "^0.5.4",
+    "node-fetch": "^1.6.3",
     "node-sass": "^4.3.0",
     "react": "15.4.2",
     "react-dom": "15.4.2",
@@ -29,6 +31,7 @@
     "react-router-redux": "^4.0.7",
     "redux": "^3.6.0",
     "redux-thunk": "^2.2.0",
+    "rucksack-css": "^0.9.1",
     "sass-loader": "^4.1.1",
     "style-loader": "^0.13.1"
   },

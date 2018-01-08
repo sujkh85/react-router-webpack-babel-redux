@@ -2,6 +2,7 @@
 var webpack = require('webpack');
 var path = require('path');
 var loaders = require('./webpack.loaders');
+//var paths = require('./config/paths');
 var autoprefixer = require('autoprefixer');
 var rucksack = require('rucksack-css');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
